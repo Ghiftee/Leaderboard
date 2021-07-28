@@ -46,7 +46,7 @@ async function submit(e) {
     user: nameELement.value,
     score: scoreElement.value,
   };
-  const response = await fetch(`${baseUrl}games/${gameId}/scores`, 
+  await fetch(`${baseUrl}games/${gameId}/scores`,
     {
       method: 'POST',
       headers: {
@@ -54,10 +54,8 @@ async function submit(e) {
       },
       body: JSON.stringify(newScore),
     });
-
-  const data = await response.json();
   nameELement.value = '';
   scoreElement.value = '';
 }
 
-module.exports = { createGame, refresh, submit }
+module.exports = { createGame, refresh, submit };
