@@ -42,4 +42,31 @@ async function refresh() {
   });
 }
 
-module.exports = {createGame, refresh}
+async function submit(e) {
+  e.preventDefault();
+
+  const gameId = localStorage.getItem('gameId');
+  const nameELement = document.getElementById('nameInput');
+  const scoreElement = document.getElementById('scoreInput');
+
+  const newScore = {
+    "user": nameELement.value,
+    "score": scoreElement.value,
+  };
+
+  const response = await fetch(`${baseUrl}games/${gameId}/scores`, 
+    {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(newScore),
+    });
+
+  const data = await response.json();
+  alert(data.message || data.result);
+  nameELement.value = '';
+  scoreElement.value = '';
+}
+
+module.exports = {createGame, refresh, submit}
