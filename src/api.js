@@ -2,11 +2,7 @@ const baseUrl = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/
 
 async function createGame() {
   // Check if you have already created a game before
-  if (localStorage.getItem('gameId')) {
-    console.log('Game already created!');
-    console.log('ID: ', localStorage.getItem('gameId'));
-    return;
-  }
+  if (localStorage.getItem('gameId')) return;
 
   // If you haven't, create a new game
   const game = {
@@ -24,7 +20,6 @@ async function createGame() {
   
   let data =  await response.json();
   const gameId = data.result.split(' ')[3];
-  console.log(data);
   localStorage.setItem('gameId', gameId);
 }
 
