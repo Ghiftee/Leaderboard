@@ -1,7 +1,7 @@
 import './css/styles.css';
 import { createGame, refresh, submit } from './api.js';
 
-function initialize() {
+const initialize = () => {
   const root = document.getElementById('root');
 
   const main = document.createElement('main');
@@ -22,7 +22,7 @@ function initialize() {
   refreshButton.classList.add('btn', 'd-inline', 'pos-rel', 'btn-shadow');
   const list = document.createElement('ul');
   list.id = 'scores';
-  list.classList.add('d-block', 'mt-10', 'border');
+  list.classList.add('d-block', 'mt-10', 'border', 'p-0', 'no-list-style');
   const div2 = document.createElement('div');
   div2.classList.add('p-20');
   const headerTwo = document.createElement('h2');
