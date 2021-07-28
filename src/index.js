@@ -56,6 +56,6 @@ const initialize = () => {
   refresh();
   document.getElementById('refresh-btn').addEventListener('click', refresh);
   document.getElementById('submit-btn').addEventListener('click', submit);
-}
+};
 
 document.addEventListener('DOMContentLoaded', initialize);
