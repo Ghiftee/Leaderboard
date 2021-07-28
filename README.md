@@ -16,10 +16,11 @@
 
 ### Milestone 2:
 
-- Create gitflow structure
-- Create simple HTMl structure
-- Add minimal styling
-- Use Es6 modules with import/export function
+- Use leaderboard API documentation to work with API
+- Create a new game using the API.
+- Implement refresh button
+- Implement submit button
+- Use async/await features to consume the API
 
 ## Built With
 - HTML, SCSS, Bootstrap, Webpack, Javascript  
