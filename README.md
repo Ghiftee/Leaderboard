@@ -14,6 +14,13 @@
 - Add minimal styling
 - Use Es6 modules with import/export function
 
+### Milestone 2:
+
+- Create gitflow structure
+- Create simple HTMl structure
+- Add minimal styling
+- Use Es6 modules with import/export function
+
 ## Built With
 - HTML, SCSS, Bootstrap, Webpack, Javascript  
 
