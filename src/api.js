@@ -28,4 +28,18 @@ async function createGame() {
   localStorage.setItem('gameId', gameId);
 }
 
-module.exports = {createGame}
+async function refresh() {
+  const gameId = localStorage.getItem('gameId');
+  const list = document.getElementById('scores');
+  list.innerHTML = '';
+  
+  const response = await fetch(`${baseUrl}games/${gameId}/scores`);
+  const scores = await response.json();
+  scores.result.forEach(score => {
+    const li = document.createElement('li');
+    li.innerText = `${score.user}: ${score.score}`;
+    list.append(li);
+  });
+}
+
+module.exports = {createGame, refresh}
