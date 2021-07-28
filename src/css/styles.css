@@ -4,7 +4,6 @@ h1 {
 
 .d-flex {
   display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -86,15 +85,16 @@ h1 {
   color: black;
 }
 
-:-ms-input-placeholder {
+::-ms-input-placeholder {
   color: black;
 }
 
-::-ms-input-placeholder {
+:-ms-input-placeholder {
   color: black;
 }
 
 ::placeholder {
   color: black;
 }
+
 /*# sourceMappingURL=styles.css.map */
