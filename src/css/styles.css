@@ -26,6 +26,10 @@ h1 {
   border: 2px solid black;
 }
 
+.p-0 {
+  padding: 0;
+}
+
 .p-20 {
   padding: 20px;
 }
@@ -95,6 +99,14 @@ h1 {
 
 ::placeholder {
   color: black;
+}
+
+.bg-gray {
+  background-color: gray;
+}
+
+.no-list-style {
+  list-style-type: none;
 }
 
 /*# sourceMappingURL=styles.css.map */

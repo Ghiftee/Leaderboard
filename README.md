@@ -14,6 +14,14 @@
 - Add minimal styling
 - Use Es6 modules with import/export function
 
+### Milestone 2:
+
+- Use leaderboard API documentation to work with API
+- Create a new game using the API.
+- Implement refresh button
+- Implement submit button
+- Use async/await features to consume the API
+
 ## Built With
 - HTML, SCSS, Bootstrap, Webpack, Javascript  
 

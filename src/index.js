@@ -1,6 +1,7 @@
 import './css/styles.css';
+import { createGame, refresh, submit } from './api.js';
 
-function initialize() {
+const initialize = () => {
   const root = document.getElementById('root');
 
   const main = document.createElement('main');
@@ -16,10 +17,12 @@ function initialize() {
   secondHeader.innerText = 'Recent scores';
   secondHeader.classList.add('d-inline', 'me-10');
   const refreshButton = document.createElement('button');
+  refreshButton.id = 'refresh-btn';
   refreshButton.innerText = 'Refresh';
   refreshButton.classList.add('btn', 'd-inline', 'pos-rel', 'btn-shadow');
   const list = document.createElement('ul');
-  list.classList.add('d-block', 'mt-10', 'border');
+  list.id = 'scores';
+  list.classList.add('d-block', 'mt-10', 'border', 'p-0', 'no-list-style');
   const div2 = document.createElement('div');
   div2.classList.add('p-20');
   const headerTwo = document.createElement('h2');
@@ -27,14 +30,17 @@ function initialize() {
   headerTwo.classList.add('d-inline');
   const form = document.createElement('form');
   const input1 = document.createElement('input');
+  input1.id = 'nameInput';
   input1.classList.add('mt-10', 'border');
   input1.placeholder = 'Your Name';
   const br1 = document.createElement('br');
   const input2 = document.createElement('input');
+  input2.id = 'scoreInput';
   input2.classList.add('mt-10', 'border');
-  input2.placeholder = 'Your Name';
+  input2.placeholder = 'Your Score';
   const br2 = document.createElement('br');
   const submitButton = document.createElement('button');
+  submitButton.id = 'submit-btn';
   submitButton.innerText = 'Submit';
   submitButton.classList.add('btn', 'mt-10', 'float-right', 'pos-rel', 'btn-shadow');
 
@@ -45,6 +51,11 @@ function initialize() {
   section.append(div1, div2);
   main.append(header, section);
   root.append(main);
-}
+
+  createGame();
+  refresh();
+  document.getElementById('refresh-btn').addEventListener('click', refresh);
+  document.getElementById('submit-btn').addEventListener('click', submit);
+};
 
 document.addEventListener('DOMContentLoaded', initialize);
