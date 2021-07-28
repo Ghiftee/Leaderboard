@@ -1,6 +1,6 @@
 const baseUrl = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/';
 
- const createGame = async () => {
+const createGame = async () => {
   // Check if you have already created a game before
   if (localStorage.getItem('gameId')) return;
 
