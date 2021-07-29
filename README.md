@@ -54,7 +54,8 @@
 
 To get a local copy up and running:
 
-You should have basic knowledge of HTML, Webpack, Javascript, a text editor and chrome browser. 
+You should have basic knowledge of HTML, Webpack, Javascript, APIs, a text editor and chrome browser.
+
 You can clone this repository by simply going to [Repository Link](https://github.com/Ghiftee/leaderboard/) and downloading it.
 
 After downloading:
