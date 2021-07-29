@@ -45,8 +45,7 @@ const initialize = () => {
   submitButton.classList.add('btn', 'mt-20', 'float-right', 'pos-rel', 'btn-shadow');
   const footer = document.createElement('footer');
   footer.innerHTML = 'Copyright &#169 Uwhubetine Gift | All rights reserved';
-  footer.classList.add('pos-fixed', 'p-mx', 'bottom','h-50');
-  
+  footer.classList.add('pos-fixed', 'p-mx', 'bottom', 'h-50');
   form.append(input1, br1, input2, br2, submitButton);
   div2.append(headerTwo, form);
   div1B.append(secondHeader, refreshButton);

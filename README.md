@@ -5,7 +5,7 @@
 
 > This project is a leaderboard website that displays scores submitted by different players.
 
-![screenshot](images/leaderboard-1.png)
+![screenshot](images/leaderboard-2.png)
 
 ### Milestone 1:
 
@@ -21,6 +21,12 @@
 - Implement refresh button
 - Implement submit button
 - Use async/await features to consume the API
+
+### Milestone 3:
+
+- Improve look and feel
+- Add styling
+- Maintain general layout of wireframe
 
 ## Built With
 - HTML, SCSS, Bootstrap, Webpack, Javascript  
