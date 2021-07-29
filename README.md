@@ -31,7 +31,7 @@
 # Built With
 - HTML, SCSS, Bootstrap, Webpack, Javascript, leaderboard API
 
-### Interaction with the leaderboard API
+# Interaction with the leaderboard API
 - First, add the [base url](https://us-central1-js-capstone-backend.cloudfunctions.net/api/)
 - Create a new game. The POST method is used to create a new game and the game must have a name
   e.g
@@ -44,7 +44,7 @@
 - GET method however does not require any input from the user and its function is just to return the list of users and their scores
 - Get the gameID then chain it with the base url to get the score.
 
-## More information about interacting with the API can be found in [The Leaderboard API Documentation](https://www.notion.so/Leaderboard-API-service-24c0c3c116974ac49488d4eb0267ade3)
+### More information about interacting with the API can be found in [The Leaderboard API Documentation](https://www.notion.so/Leaderboard-API-service-24c0c3c116974ac49488d4eb0267ade3)
 
 ## Live Demo
 
