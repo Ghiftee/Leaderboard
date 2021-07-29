@@ -39,8 +39,8 @@
 
 To get a local copy up and running:
 
-You should have basic knowledge of HTML, Webpack, Javascript, a text editor and chrome browser.
-This project uses API to get and receive data, for detailes information on how to use this API, check out the [Leaderboard API documentation](https://www.notion.so/Leaderboard-API-service-24c0c3c116974ac49488d4eb0267ade3)
+You should have basic knowledge of HTML, Webpack, Javascript, APIs, a text editor and chrome browser.
+This project uses API to get and receive data, for detailed information on how to use this API, check out the [Leaderboard API documentation](https://www.notion.so/Leaderboard-API-service-24c0c3c116974ac49488d4eb0267ade3)
 
 You can also clone this repository by simply going to [Repository Link](https://github.com/Ghiftee/leaderboard/) and downloading it.
 
