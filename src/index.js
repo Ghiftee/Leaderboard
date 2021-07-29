@@ -1,6 +1,5 @@
 import './css/styles.css';
 import { createGame, refresh, submit } from './api.js';
-import { allLimit } from 'async';
 
 const initialize = () => {
   const root = document.getElementById('root');
@@ -25,7 +24,7 @@ const initialize = () => {
   list.id = 'scores';
   list.classList.add('border', 'p-0', 'no-list-style');
   const div2 = document.createElement('div');
-  div2.classList.add('p-30',);
+  div2.classList.add('p-30');
   const headerTwo = document.createElement('h2');
   headerTwo.innerText = 'Add your score';
   headerTwo.classList.add('d-inline', 'font');
@@ -45,10 +44,9 @@ const initialize = () => {
   submitButton.innerText = 'Submit';
   submitButton.classList.add('btn', 'mt-20', 'float-right', 'pos-rel', 'btn-shadow');
   const footer = document.createElement('footer');
-  footer.innerHTML = 'Copyright &#169 Uwhubetine Gift | All rights reserved ';
+  footer.innerHTML = 'Copyright &#169 Uwhubetine Gift | All rights reserved';
   footer.classList.add('pos-fixed', 'p-mx', 'bottom','h-50');
   
-
   form.append(input1, br1, input2, br2, submitButton);
   div2.append(headerTwo, form);
   div1B.append(secondHeader, refreshButton);
