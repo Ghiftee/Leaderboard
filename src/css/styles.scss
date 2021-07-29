@@ -1,4 +1,13 @@
+body {
+  background-color: orange;
+  font-family: cursive;
+}
+
 h1 {
+  font-size: 70px;
+}
+
+.font {
   font-size: 40px;
 }
 
@@ -8,10 +17,6 @@ h1 {
 
 .d-inline {
   display: inline;
-}
-
-.d-block {
-  display: block;
 }
 
 .flex-col {
@@ -26,12 +31,12 @@ h1 {
   padding: 0;
 }
 
-.p-20 {
-  padding: 20px;
+.p-30 {
+  padding: 30px;
 }
 
-.mt-10 {
-  margin-top: 10px;
+.mt-20 {
+  margin-top: 20px;
 }
 
 .me-10 {
@@ -42,8 +47,28 @@ h1 {
   width: 100vw;
 }
 
-.justify-center {
-  justify-content: center;
+.w-30 {
+  width: 30vw;
+}
+
+.h-30 {
+  height: 30px;
+}
+
+.h-50 {
+  height: 50px;
+}
+
+.bottom {
+  bottom: 0;
+}
+
+.pos-fixed{
+  position: fixed;
+}
+
+.justify {
+  justify-content: space-evenly;
 }
 
 .align-center {
@@ -82,7 +107,7 @@ h1 {
 }
 
 .bg-gray {
-  background-color: gray;
+  background-color: rgb(224, 220, 220);
 }
 
 .no-list-style {
